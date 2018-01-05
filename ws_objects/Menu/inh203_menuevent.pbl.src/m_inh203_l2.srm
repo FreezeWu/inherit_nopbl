@@ -1,0 +1,88 @@
+﻿$PBExportHeader$m_inh203_l2.srm
+forward
+global type m_inh203_l2 from m_inh203_l1
+end type
+end forward
+
+global type m_inh203_l2 from m_inh203_l1
+event type string ue_point_7 ( )
+end type
+global m_inh203_l2 m_inh203_l2
+
+event type string ue_point_7();If IsValid(W_INH203W01_MENUEVENT) Then
+	W_INH203W01_MENUEVENT.wf_Output("Information : Execute m_inh203_L2.Event ue_point_7() Script", False)
+End If
+Return ""
+end event
+
+on m_inh203_l2.create
+m_inh203_l2=this
+call super::create
+this.text = "m_inh203_l2"
+end on
+
+on m_inh203_l2.destroy
+call super::destroy
+end on
+
+event ue_point_1;//Override
+If IsValid(W_INH203W01_MENUEVENT) Then
+	W_INH203W01_MENUEVENT.wf_Output("Information : Execute m_inh203_L2.Event ue_point_1() Script", False)
+End If
+Return ""
+end event
+
+event ue_point_3;call super::ue_point_3;//Extend
+If IsValid(W_INH203W01_MENUEVENT) Then
+	W_INH203W01_MENUEVENT.wf_Output("Information : Execute m_inh203_L2.Event ue_point_3() Script", False)
+End If
+Return ""
+end event
+
+event ue_point_4;//Override
+If IsValid(W_INH203W01_MENUEVENT) Then
+	W_INH203W01_MENUEVENT.wf_Output("Information : Execute m_inh203_L2.Event ue_point_4() Script", False)
+End If
+Return ""
+end event
+
+event ue_point_6;call super::ue_point_6;//Extend
+If IsValid(W_INH203W01_MENUEVENT) Then
+	W_INH203W01_MENUEVENT.wf_Output("Information : Execute m_inh203_L2.Event ue_point_6() Script", False)
+End If
+Return ""
+end event
+
+type m_testcontents from m_inh203_l1`m_testcontents within m_inh203_l2
+end type
+
+on m_testcontents.create
+call super::create
+end on
+
+on m_testcontents.destroy
+call super::destroy
+end on
+
+type m_3 from m_inh203_l1`m_3 within m_testcontents
+end type
+
+on m_3.create
+call super::create
+end on
+
+on m_3.destroy
+call super::destroy
+end on
+
+type m_1 from m_inh203_l1`m_1 within m_inh203_l2
+end type
+
+on m_1.create
+call super::create
+end on
+
+on m_1.destroy
+call super::destroy
+end on
+

@@ -1,0 +1,307 @@
+﻿$PBExportHeader$m_main.srm
+forward
+global type m_main from menu
+end type
+type m_testcontents from menu within m_main
+end type
+type m_3 from menu within m_testcontents
+end type
+type m_l2windoww02inheritfromw01 from menu within m_testcontents
+end type
+type m_callmultilayermenuinmultilayernvo from menu within m_testcontents
+end type
+type m_specifylevel1menu from menu within m_testcontents
+end type
+type m_specifyl4menuforl2windoww05inheritfromw from menu within m_testcontents
+end type
+type m_specifydiffmenuforl2windoww06inheritfro from menu within m_testcontents
+end type
+type m_l3windoww07inheritfromw02 from menu within m_testcontents
+end type
+type m_specifyl1menuforl3windoww08inheritfromw from menu within m_testcontents
+end type
+type m_specifyl4menuforl3windoww09inheritfromw from menu within m_testcontents
+end type
+type m_specifyl4menuforl3windoww10inheritfromw from menu within m_testcontents
+end type
+type m_specifyl3menuforl3windoww11inheritfromw from menu within m_testcontents
+end type
+type m_testcontents from menu within m_main
+m_3 m_3
+m_l2windoww02inheritfromw01 m_l2windoww02inheritfromw01
+m_callmultilayermenuinmultilayernvo m_callmultilayermenuinmultilayernvo
+m_specifylevel1menu m_specifylevel1menu
+m_specifyl4menuforl2windoww05inheritfromw m_specifyl4menuforl2windoww05inheritfromw
+m_specifydiffmenuforl2windoww06inheritfro m_specifydiffmenuforl2windoww06inheritfro
+m_l3windoww07inheritfromw02 m_l3windoww07inheritfromw02
+m_specifyl1menuforl3windoww08inheritfromw m_specifyl1menuforl3windoww08inheritfromw
+m_specifyl4menuforl3windoww09inheritfromw m_specifyl4menuforl3windoww09inheritfromw
+m_specifyl4menuforl3windoww10inheritfromw m_specifyl4menuforl3windoww10inheritfromw
+m_specifyl3menuforl3windoww11inheritfromw m_specifyl3menuforl3windoww11inheritfromw
+end type
+type m_1 from menu within m_main
+end type
+global type m_main from menu
+m_testcontents m_testcontents
+m_1 m_1
+end type
+end forward
+
+global type m_main from menu
+m_testcontents m_testcontents
+m_1 m_1
+end type
+global m_main m_main
+
+on m_main.create
+m_main=this
+call super::create
+this.text = "m_main"
+this.m_testcontents=create m_testcontents
+this.m_1=create m_1
+this.Item[UpperBound(this.Item)+1]=this.m_testcontents
+this.Item[UpperBound(this.Item)+1]=this.m_1
+end on
+
+on m_main.destroy
+call super::destroy
+destroy(this.m_testcontents)
+destroy(this.m_1)
+end on
+
+type m_testcontents from menu within m_main
+m_3 m_3
+m_l2windoww02inheritfromw01 m_l2windoww02inheritfromw01
+m_callmultilayermenuinmultilayernvo m_callmultilayermenuinmultilayernvo
+m_specifylevel1menu m_specifylevel1menu
+m_specifyl4menuforl2windoww05inheritfromw m_specifyl4menuforl2windoww05inheritfromw
+m_specifydiffmenuforl2windoww06inheritfro m_specifydiffmenuforl2windoww06inheritfro
+m_l3windoww07inheritfromw02 m_l3windoww07inheritfromw02
+m_specifyl1menuforl3windoww08inheritfromw m_specifyl1menuforl3windoww08inheritfromw
+m_specifyl4menuforl3windoww09inheritfromw m_specifyl4menuforl3windoww09inheritfromw
+m_specifyl4menuforl3windoww10inheritfromw m_specifyl4menuforl3windoww10inheritfromw
+m_specifyl3menuforl3windoww11inheritfromw m_specifyl3menuforl3windoww11inheritfromw
+end type
+
+on m_testcontents.create
+call super::create
+this.text = "Test Contents"
+this.m_3=create m_3
+this.m_l2windoww02inheritfromw01=create m_l2windoww02inheritfromw01
+this.m_callmultilayermenuinmultilayernvo=create m_callmultilayermenuinmultilayernvo
+this.m_specifylevel1menu=create m_specifylevel1menu
+this.m_specifyl4menuforl2windoww05inheritfromw=create m_specifyl4menuforl2windoww05inheritfromw
+this.m_specifydiffmenuforl2windoww06inheritfro=create m_specifydiffmenuforl2windoww06inheritfro
+this.m_l3windoww07inheritfromw02=create m_l3windoww07inheritfromw02
+this.m_specifyl1menuforl3windoww08inheritfromw=create m_specifyl1menuforl3windoww08inheritfromw
+this.m_specifyl4menuforl3windoww09inheritfromw=create m_specifyl4menuforl3windoww09inheritfromw
+this.m_specifyl4menuforl3windoww10inheritfromw=create m_specifyl4menuforl3windoww10inheritfromw
+this.m_specifyl3menuforl3windoww11inheritfromw=create m_specifyl3menuforl3windoww11inheritfromw
+this.Item[UpperBound(this.Item)+1]=this.m_3
+this.Item[UpperBound(this.Item)+1]=this.m_l2windoww02inheritfromw01
+this.Item[UpperBound(this.Item)+1]=this.m_callmultilayermenuinmultilayernvo
+this.Item[UpperBound(this.Item)+1]=this.m_specifylevel1menu
+this.Item[UpperBound(this.Item)+1]=this.m_specifyl4menuforl2windoww05inheritfromw
+this.Item[UpperBound(this.Item)+1]=this.m_specifydiffmenuforl2windoww06inheritfro
+this.Item[UpperBound(this.Item)+1]=this.m_l3windoww07inheritfromw02
+this.Item[UpperBound(this.Item)+1]=this.m_specifyl1menuforl3windoww08inheritfromw
+this.Item[UpperBound(this.Item)+1]=this.m_specifyl4menuforl3windoww09inheritfromw
+this.Item[UpperBound(this.Item)+1]=this.m_specifyl4menuforl3windoww10inheritfromw
+this.Item[UpperBound(this.Item)+1]=this.m_specifyl3menuforl3windoww11inheritfromw
+end on
+
+on m_testcontents.destroy
+call super::destroy
+destroy(this.m_3)
+destroy(this.m_l2windoww02inheritfromw01)
+destroy(this.m_callmultilayermenuinmultilayernvo)
+destroy(this.m_specifylevel1menu)
+destroy(this.m_specifyl4menuforl2windoww05inheritfromw)
+destroy(this.m_specifydiffmenuforl2windoww06inheritfro)
+destroy(this.m_l3windoww07inheritfromw02)
+destroy(this.m_specifyl1menuforl3windoww08inheritfromw)
+destroy(this.m_specifyl4menuforl3windoww09inheritfromw)
+destroy(this.m_specifyl4menuforl3windoww10inheritfromw)
+destroy(this.m_specifyl3menuforl3windoww11inheritfromw)
+end on
+
+type m_3 from menu within m_testcontents
+end type
+
+event clicked;OpenSheetWithParm(W_INH402W01_L1_WINANDMENU, This.text, parentwindow, 0, Original!)
+end event
+
+on m_3.create
+call super::create
+this.text = "Specify L2 Menu for L1 Window(W01)"
+end on
+
+on m_3.destroy
+call super::destroy
+end on
+
+type m_l2windoww02inheritfromw01 from menu within m_testcontents
+end type
+
+on m_l2windoww02inheritfromw01.create
+call super::create
+this.text = "L2 Window(W02, Inherit from W01)"
+end on
+
+on m_l2windoww02inheritfromw01.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheetWithParm(W_INH402W02_L2_IW01, This.text, parentwindow, 0, Original!)
+end event
+
+type m_callmultilayermenuinmultilayernvo from menu within m_testcontents
+end type
+
+on m_callmultilayermenuinmultilayernvo.create
+call super::create
+this.text = "Specify L3 Menu for L2 Window(W03, Inherit from W01)"
+end on
+
+on m_callmultilayermenuinmultilayernvo.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheetWithParm(W_INH402W03_L2_IW01, This.text, parentwindow, 0, Original!)
+end event
+
+type m_specifylevel1menu from menu within m_testcontents
+end type
+
+on m_specifylevel1menu.create
+call super::create
+this.text = "Specify L1 Menu for L2 Window(W04, Inherit from W01)"
+end on
+
+on m_specifylevel1menu.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheetWithParm(W_INH402W04_L2_IW01, This.text, parentwindow, 0, Original!)
+end event
+
+type m_specifyl4menuforl2windoww05inheritfromw from menu within m_testcontents
+end type
+
+on m_specifyl4menuforl2windoww05inheritfromw.create
+call super::create
+this.text = "Specify L4 Menu for L2 Window(W05, Inherit from W01)"
+end on
+
+on m_specifyl4menuforl2windoww05inheritfromw.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheetWithParm(W_INH402W05_L2_IW01, This.text, parentwindow, 0, Original!)
+end event
+
+type m_specifydiffmenuforl2windoww06inheritfro from menu within m_testcontents
+end type
+
+on m_specifydiffmenuforl2windoww06inheritfro.create
+call super::create
+this.text = "Specify Diff Menu for L2 Window(W06, Inherit from W01)"
+end on
+
+on m_specifydiffmenuforl2windoww06inheritfro.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheetWithParm(W_INH402W06_L2_IW01, This.text, parentwindow, 0, Original!)
+end event
+
+type m_l3windoww07inheritfromw02 from menu within m_testcontents
+end type
+
+on m_l3windoww07inheritfromw02.create
+call super::create
+this.text = "L3 Window(W07, Inherit from W02)"
+end on
+
+on m_l3windoww07inheritfromw02.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheetWithParm(W_INH402W07_L3_IW02, This.text, parentwindow, 0, Original!)
+end event
+
+type m_specifyl1menuforl3windoww08inheritfromw from menu within m_testcontents
+end type
+
+on m_specifyl1menuforl3windoww08inheritfromw.create
+call super::create
+this.text = "L3 Window(W08, Inherit from W03)"
+end on
+
+on m_specifyl1menuforl3windoww08inheritfromw.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheetWithParm(W_INH402W08_L3_IW03, This.text, parentwindow, 0, Original!)
+end event
+
+type m_specifyl4menuforl3windoww09inheritfromw from menu within m_testcontents
+end type
+
+on m_specifyl4menuforl3windoww09inheritfromw.create
+call super::create
+this.text = "Specify L1 Menu for L3 Window(W09, Inherit from W04)"
+end on
+
+on m_specifyl4menuforl3windoww09inheritfromw.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheetWithParm(W_INH402W09_L3_IW04, This.text, parentwindow, 0, Original!)
+end event
+
+type m_specifyl4menuforl3windoww10inheritfromw from menu within m_testcontents
+end type
+
+on m_specifyl4menuforl3windoww10inheritfromw.create
+call super::create
+this.text = "Specify L4 Menu for L3 Window(W10, Inherit from W05)"
+end on
+
+on m_specifyl4menuforl3windoww10inheritfromw.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheetWithParm(W_INH402W10_L3_IW05, This.text, parentwindow, 0, Original!)
+end event
+
+type m_specifyl3menuforl3windoww11inheritfromw from menu within m_testcontents
+end type
+
+on m_specifyl3menuforl3windoww11inheritfromw.create
+call super::create
+this.text = "L3 Window(W11, Inherit from W06)"
+end on
+
+on m_specifyl3menuforl3windoww11inheritfromw.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheetWithParm(W_INH402W11_L3_IW06, This.text, parentwindow, 0, Original!)
+end event
+
+type m_1 from menu within m_main
+end type
+
+event clicked;Close(ParentWindow)
+end event
+
+on m_1.create
+call super::create
+this.text = "Exit"
+end on
+
+on m_1.destroy
+call super::destroy
+end on
+

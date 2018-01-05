@@ -1,0 +1,63 @@
+﻿$PBExportHeader$m_inh201_l2.srm
+forward
+global type m_inh201_l2 from m_inh201_l1
+end type
+end forward
+
+global type m_inh201_l2 from m_inh201_l1
+end type
+global m_inh201_l2 m_inh201_l2
+
+type variables
+//Declare Instance Variables
+String					is_L2
+Long						il_L2[]
+str_inh201_normal		istr_L2
+DataStore				ids_L2
+CommandButton			icb_L2
+nvo_AutoInstantiate	invo_L2_Auto
+nvo_UnAuto				invo_L2_Unauto
+end variables
+
+on m_inh201_l2.create
+m_inh201_l2=this
+call super::create
+end on
+
+on m_inh201_l2.destroy
+call super::destroy
+end on
+
+type m_testcontents from m_inh201_l1`m_testcontents within m_inh201_l2
+end type
+
+on m_testcontents.create
+call super::create
+end on
+
+on m_testcontents.destroy
+call super::destroy
+end on
+
+type m_3 from m_inh201_l1`m_3 within m_testcontents
+end type
+
+on m_3.create
+call super::create
+end on
+
+on m_3.destroy
+call super::destroy
+end on
+
+type m_1 from m_inh201_l1`m_1 within m_inh201_l2
+end type
+
+on m_1.create
+call super::create
+end on
+
+on m_1.destroy
+call super::destroy
+end on
+

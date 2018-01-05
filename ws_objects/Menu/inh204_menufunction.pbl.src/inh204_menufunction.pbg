@@ -1,0 +1,18 @@
+﻿Save Format v3.0(19990112)
+@begin Libraries
+ "inh204_menufunction.pbl" "";
+@end;
+@begin Objects 
+ "inh204_menufunction.sra" "inh204_menufunction.pbl";
+ "d_testpoint.srd" "inh204_menufunction.pbl";
+ "m_inh204_l1.srm" "inh204_menufunction.pbl";
+ "m_inh204_l2.srm" "inh204_menufunction.pbl";
+ "m_inh204_l3.srm" "inh204_menufunction.pbl";
+ "m_main.srm" "inh204_menufunction.pbl";
+ "n_cst_config.sru" "inh204_menufunction.pbl";
+ "uo_getproperties.sru" "inh204_menufunction.pbl";
+ "w_inh204w01_menufunction.srw" "inh204_menufunction.pbl";
+ "w_mdi.srw" "inh204_menufunction.pbl";
+ "w_pbvsjs.srw" "inh204_menufunction.pbl";
+ "w_validation.srw" "inh204_menufunction.pbl";
+@end;

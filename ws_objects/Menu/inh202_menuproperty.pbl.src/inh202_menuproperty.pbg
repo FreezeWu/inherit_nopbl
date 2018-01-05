@@ -1,0 +1,19 @@
+﻿Save Format v3.0(19990112)
+@begin Libraries
+ "inh202_menuproperty.pbl" "";
+@end;
+@begin Objects 
+ "inh202_menuproperty.sra" "inh202_menuproperty.pbl";
+ "d_testpoint.srd" "inh202_menuproperty.pbl";
+ "m_inh202_l1.srm" "inh202_menuproperty.pbl";
+ "m_inh202_l2.srm" "inh202_menuproperty.pbl";
+ "m_inh202_l3.srm" "inh202_menuproperty.pbl";
+ "m_main.srm" "inh202_menuproperty.pbl";
+ "n_cst_config.sru" "inh202_menuproperty.pbl";
+ "uo_getproperties.sru" "inh202_menuproperty.pbl";
+ "w_inh202w01_menupropertyl2.srw" "inh202_menuproperty.pbl";
+ "w_inh202w02_menupropertyl3.srw" "inh202_menuproperty.pbl";
+ "w_mdi.srw" "inh202_menuproperty.pbl";
+ "w_pbvsjs.srw" "inh202_menuproperty.pbl";
+ "w_validation.srw" "inh202_menuproperty.pbl";
+@end;

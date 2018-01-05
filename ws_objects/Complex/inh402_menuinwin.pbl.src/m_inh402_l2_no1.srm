@@ -1,0 +1,57 @@
+﻿$PBExportHeader$m_inh402_l2_no1.srm
+forward
+global type m_inh402_l2_no1 from m_inh402_l1_no1
+end type
+end forward
+
+global type m_inh402_l2_no1 from m_inh402_l1_no1
+end type
+global m_inh402_l2_no1 m_inh402_l2_no1
+
+type variables
+String	is_L2 = "L2"
+end variables
+
+on m_inh402_l2_no1.create
+m_inh402_l2_no1=this
+call super::create
+end on
+
+on m_inh402_l2_no1.destroy
+call super::destroy
+end on
+
+type m_testcontents from m_inh402_l1_no1`m_testcontents within m_inh402_l2_no1
+end type
+
+on m_testcontents.create
+call super::create
+end on
+
+on m_testcontents.destroy
+call super::destroy
+end on
+
+type m_3 from m_inh402_l1_no1`m_3 within m_testcontents
+end type
+
+on m_3.create
+call super::create
+this.text = "NO1 L2"
+end on
+
+on m_3.destroy
+call super::destroy
+end on
+
+type m_1 from m_inh402_l1_no1`m_1 within m_inh402_l2_no1
+end type
+
+on m_1.create
+call super::create
+end on
+
+on m_1.destroy
+call super::destroy
+end on
+

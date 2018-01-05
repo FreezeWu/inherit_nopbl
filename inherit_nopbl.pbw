@@ -1,0 +1,20 @@
+Save Format v3.0(19990112)
+@begin Targets
+ 0 "Call Ancestor Method\\inh501_callancestor.pbt";
+ 10 "Menu\\inh201_menuinstancevar.pbt";
+ 1 "Complex\\inh401_menuandnvo.pbt";
+ 11 "Menu\\inh202_menuproperty.pbt";
+ 2 "Complex\\inh402_menuinwin.pbt";
+ 12 "Menu\\inh203_menuevent.pbt";
+ 3 "Complex\\inh403_nvoinwin.pbt";
+ 13 "Menu\\inh204_menufunction.pbt";
+ 4 "Complex\\inh404_nvoincvo.pbt";
+ 14 "Misc\\tc_inheritmisc.pbt";
+ 5 "Complex\\inh405_nvoinsvo.pbt";
+ 6 "Complex\\inh406_svoincvo.pbt";
+ 7 "Complex\\inh407_cvoincvo.pbt";
+ 8 "Complex\\inh408_svoinwin.pbt";
+ 9 "Complex\\inh409_cvoinwin.pbt";
+@end;
+DefaultTarget "Call Ancestor Method\\inh501_callancestor.pbt";
+DefaultRemoteTarget "Call Ancestor Method\\inh501_callancestor.pbt";

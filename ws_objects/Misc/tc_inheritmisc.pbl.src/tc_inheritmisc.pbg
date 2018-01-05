@@ -1,0 +1,22 @@
+﻿Save Format v3.0(19990112)
+@begin Libraries
+ "tc_inheritmisc.pbl" "";
+@end;
+@begin Objects 
+ "tc_inheritmisc.sra" "tc_inheritmisc.pbl";
+ "d_testinfo.srd" "tc_inheritmisc.pbl";
+ "d_testpoint_templet.srd" "tc_inheritmisc.pbl";
+ "m_simplecasemain.srm" "tc_inheritmisc.pbl";
+ "m_templet.srm" "tc_inheritmisc.pbl";
+ "n_cst_config.sru" "tc_inheritmisc.pbl";
+ "nvo_runwindow_parameter.sru" "tc_inheritmisc.pbl";
+ "nvo_transaction.sru" "tc_inheritmisc.pbl";
+ "uo_multilineedit.sru" "tc_inheritmisc.pbl";
+ "w_a.srw" "tc_inheritmisc.pbl";
+ "w_b.srw" "tc_inheritmisc.pbl";
+ "w_c.srw" "tc_inheritmisc.pbl";
+ "w_inhmiscw01.srw" "tc_inheritmisc.pbl";
+ "w_pop_viewscript.srw" "tc_inheritmisc.pbl";
+ "w_simplecasemain.srw" "tc_inheritmisc.pbl";
+ "w_templet.srw" "tc_inheritmisc.pbl";
+@end;

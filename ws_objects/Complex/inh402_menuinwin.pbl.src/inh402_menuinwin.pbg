@@ -1,0 +1,29 @@
+﻿Save Format v3.0(19990112)
+@begin Libraries
+ "inh402_menuinwin.pbl" "";
+@end;
+@begin Objects 
+ "inh402_menuinwin.sra" "inh402_menuinwin.pbl";
+ "d_testpoint.srd" "inh402_menuinwin.pbl";
+ "m_inh402_l1_no1.srm" "inh402_menuinwin.pbl";
+ "m_inh402_l1_no2.srm" "inh402_menuinwin.pbl";
+ "m_inh402_l2_no1.srm" "inh402_menuinwin.pbl";
+ "m_inh402_l3_no1.srm" "inh402_menuinwin.pbl";
+ "m_inh402_l4_no1.srm" "inh402_menuinwin.pbl";
+ "m_main.srm" "inh402_menuinwin.pbl";
+ "n_cst_config.sru" "inh402_menuinwin.pbl";
+ "w_inh402w01_l1_winandmenu.srw" "inh402_menuinwin.pbl";
+ "w_inh402w02_l2_iw01.srw" "inh402_menuinwin.pbl";
+ "w_inh402w03_l2_iw01.srw" "inh402_menuinwin.pbl";
+ "w_inh402w04_l2_iw01.srw" "inh402_menuinwin.pbl";
+ "w_inh402w05_l2_iw01.srw" "inh402_menuinwin.pbl";
+ "w_inh402w06_l2_iw01.srw" "inh402_menuinwin.pbl";
+ "w_inh402w07_l3_iw02.srw" "inh402_menuinwin.pbl";
+ "w_inh402w08_l3_iw03.srw" "inh402_menuinwin.pbl";
+ "w_inh402w09_l3_iw04.srw" "inh402_menuinwin.pbl";
+ "w_inh402w10_l3_iw05.srw" "inh402_menuinwin.pbl";
+ "w_inh402w11_l3_iw06.srw" "inh402_menuinwin.pbl";
+ "w_mdi.srw" "inh402_menuinwin.pbl";
+ "w_pbvsjs.srw" "inh402_menuinwin.pbl";
+ "w_validation.srw" "inh402_menuinwin.pbl";
+@end;

@@ -1,0 +1,24 @@
+﻿Save Format v3.0(19990112)
+@begin Libraries
+ "inh201_menuinstancevar.pbl" "";
+@end;
+@begin Objects 
+ "inh201_menuinstancevar.sra" "inh201_menuinstancevar.pbl";
+ "d_l1_notexists.srd" "inh201_menuinstancevar.pbl";
+ "d_l2_notexists.srd" "inh201_menuinstancevar.pbl";
+ "d_l3_notexists.srd" "inh201_menuinstancevar.pbl";
+ "d_testpoint.srd" "inh201_menuinstancevar.pbl";
+ "m_inh201_l1.srm" "inh201_menuinstancevar.pbl";
+ "m_inh201_l2.srm" "inh201_menuinstancevar.pbl";
+ "m_inh201_l3.srm" "inh201_menuinstancevar.pbl";
+ "m_main.srm" "inh201_menuinstancevar.pbl";
+ "str_inh201_normal.srs" "inh201_menuinstancevar.pbl";
+ "n_cst_config.sru" "inh201_menuinstancevar.pbl";
+ "nvo_autoinstantiate.sru" "inh201_menuinstancevar.pbl";
+ "nvo_unauto.sru" "inh201_menuinstancevar.pbl";
+ "uo_getproperties.sru" "inh201_menuinstancevar.pbl";
+ "w_inh201w01_menuinstancevar.srw" "inh201_menuinstancevar.pbl";
+ "w_mdi.srw" "inh201_menuinstancevar.pbl";
+ "w_pbvsjs.srw" "inh201_menuinstancevar.pbl";
+ "w_validation.srw" "inh201_menuinstancevar.pbl";
+@end;

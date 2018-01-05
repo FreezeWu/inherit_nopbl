@@ -1,0 +1,18 @@
+﻿Save Format v3.0(19990112)
+@begin Libraries
+ "inh203_menuevent.pbl" "";
+@end;
+@begin Objects 
+ "inh203_menuevent.sra" "inh203_menuevent.pbl";
+ "d_testpoint.srd" "inh203_menuevent.pbl";
+ "m_inh203_l1.srm" "inh203_menuevent.pbl";
+ "m_inh203_l2.srm" "inh203_menuevent.pbl";
+ "m_inh203_l3.srm" "inh203_menuevent.pbl";
+ "m_main.srm" "inh203_menuevent.pbl";
+ "n_cst_config.sru" "inh203_menuevent.pbl";
+ "uo_getproperties.sru" "inh203_menuevent.pbl";
+ "w_inh203w01_menuevent.srw" "inh203_menuevent.pbl";
+ "w_mdi.srw" "inh203_menuevent.pbl";
+ "w_pbvsjs.srw" "inh203_menuevent.pbl";
+ "w_validation.srw" "inh203_menuevent.pbl";
+@end;

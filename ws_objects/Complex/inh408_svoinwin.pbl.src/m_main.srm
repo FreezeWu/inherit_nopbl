@@ -1,0 +1,131 @@
+﻿$PBExportHeader$m_main.srm
+forward
+global type m_main from menu
+end type
+type m_testcontents from menu within m_main
+end type
+type m_3 from menu within m_testcontents
+end type
+type m_callsvopropertyforcvo from menu within m_testcontents
+end type
+type m_callsvoeventforcvo from menu within m_testcontents
+end type
+type m_testcontents from menu within m_main
+m_3 m_3
+m_callsvopropertyforcvo m_callsvopropertyforcvo
+m_callsvoeventforcvo m_callsvoeventforcvo
+end type
+type m_1 from menu within m_main
+end type
+global type m_main from menu
+m_testcontents m_testcontents
+m_1 m_1
+end type
+end forward
+
+global type m_main from menu
+m_testcontents m_testcontents
+m_1 m_1
+end type
+global m_main m_main
+
+on m_main.create
+m_main=this
+call super::create
+this.text = "m_main"
+this.m_testcontents=create m_testcontents
+this.m_1=create m_1
+this.Item[UpperBound(this.Item)+1]=this.m_testcontents
+this.Item[UpperBound(this.Item)+1]=this.m_1
+end on
+
+on m_main.destroy
+call super::destroy
+destroy(this.m_testcontents)
+destroy(this.m_1)
+end on
+
+type m_testcontents from menu within m_main
+m_3 m_3
+m_callsvopropertyforcvo m_callsvopropertyforcvo
+m_callsvoeventforcvo m_callsvoeventforcvo
+end type
+
+on m_testcontents.create
+call super::create
+this.text = "Test Contents"
+this.m_3=create m_3
+this.m_callsvopropertyforcvo=create m_callsvopropertyforcvo
+this.m_callsvoeventforcvo=create m_callsvoeventforcvo
+this.Item[UpperBound(this.Item)+1]=this.m_3
+this.Item[UpperBound(this.Item)+1]=this.m_callsvopropertyforcvo
+this.Item[UpperBound(this.Item)+1]=this.m_callsvoeventforcvo
+end on
+
+on m_testcontents.destroy
+call super::destroy
+destroy(this.m_3)
+destroy(this.m_callsvopropertyforcvo)
+destroy(this.m_callsvoeventforcvo)
+end on
+
+type m_3 from menu within m_testcontents
+end type
+
+event clicked;OpenSheetWithParm(W_INH408W01_L1_SVOINWIN , this.text, parentwindow, 0, Original!)
+end event
+
+on m_3.create
+call super::create
+this.text = "Call SVO for Window(Level 1)"
+end on
+
+on m_3.destroy
+call super::destroy
+end on
+
+type m_callsvopropertyforcvo from menu within m_testcontents
+end type
+
+event clicked;OpenSheetWithParm(W_INH408W02_L2_SVOINWIN , this.text, parentwindow, 0, Original!)
+end event
+
+on m_callsvopropertyforcvo.create
+call super::create
+this.text = "Call SVO for Window(Level 2)"
+end on
+
+on m_callsvopropertyforcvo.destroy
+call super::destroy
+end on
+
+type m_callsvoeventforcvo from menu within m_testcontents
+end type
+
+event clicked;OpenSheetWithParm(W_INH408W03_L3_SVOINWIN , this.text, parentwindow, 0, Original!)
+end event
+
+on m_callsvoeventforcvo.create
+call super::create
+this.text = "Call SVO for Window(Level 3)"
+end on
+
+on m_callsvoeventforcvo.destroy
+call super::destroy
+end on
+
+type m_1 from menu within m_main
+end type
+
+event clicked;Close(ParentWindow)
+end event
+
+on m_1.create
+call super::create
+this.text = "Exit"
+end on
+
+on m_1.destroy
+call super::destroy
+end on
+

@@ -1,0 +1,67 @@
+﻿$PBExportHeader$m_inh201_l3.srm
+forward
+global type m_inh201_l3 from m_inh201_l2
+end type
+end forward
+
+global type m_inh201_l3 from m_inh201_l2
+end type
+global m_inh201_l3 m_inh201_l3
+
+type variables
+//Declare Instance Variables
+String					is_L3
+Long						il_L3[]
+str_inh201_normal		istr_L3
+DataStore				ids_L3
+CommandButton			icb_L3
+nvo_AutoInstantiate	invo_L3_Auto
+nvo_UnAuto				invo_L3_Unauto
+end variables
+
+on m_inh201_l3.create
+m_inh201_l3=this
+call super::create
+end on
+
+on m_inh201_l3.destroy
+call super::destroy
+end on
+
+type m_testcontents from m_inh201_l2`m_testcontents within m_inh201_l3
+end type
+
+on m_testcontents.create
+call super::create
+end on
+
+on m_testcontents.destroy
+call super::destroy
+end on
+
+type m_3 from m_inh201_l2`m_3 within m_testcontents
+end type
+
+on m_3.create
+call super::create
+this.text = "Menu Instance Variables of Level 3"
+end on
+
+on m_3.destroy
+call super::destroy
+end on
+
+event m_3::clicked;call super::clicked;OpenSheet(w_inh201w01_menuinstancevar, parentWindow, 0, Original!)
+end event
+
+type m_1 from m_inh201_l2`m_1 within m_inh201_l3
+end type
+
+on m_1.create
+call super::create
+end on
+
+on m_1.destroy
+call super::destroy
+end on
+

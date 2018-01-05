@@ -1,0 +1,288 @@
+﻿$PBExportHeader$m_inh202_l1.srm
+forward
+global type m_inh202_l1 from menu
+end type
+type m_testcontents from menu within m_inh202_l1
+end type
+type m_menupropertyofleve2 from menu within m_testcontents
+end type
+type m_menupropertyofleve3 from menu within m_testcontents
+end type
+type m_text from menu within m_testcontents
+end type
+type m_tag from menu within m_testcontents
+end type
+type m_visible from menu within m_testcontents
+end type
+type m_enable from menu within m_testcontents
+end type
+type m_checked from menu within m_testcontents
+end type
+type m_toolbaritemname from menu within m_testcontents
+end type
+type m_toolbaritemdownname from menu within m_testcontents
+end type
+type m_toolbaritemtext from menu within m_testcontents
+end type
+type m_testcontents from menu within m_inh202_l1
+m_menupropertyofleve2 m_menupropertyofleve2
+m_menupropertyofleve3 m_menupropertyofleve3
+m_text m_text
+m_tag m_tag
+m_visible m_visible
+m_enable m_enable
+m_checked m_checked
+m_toolbaritemname m_toolbaritemname
+m_toolbaritemdownname m_toolbaritemdownname
+m_toolbaritemtext m_toolbaritemtext
+end type
+type m_1 from menu within m_inh202_l1
+end type
+global type m_inh202_l1 from menu
+m_testcontents m_testcontents
+m_1 m_1
+end type
+end forward
+
+global type m_inh202_l1 from menu
+m_testcontents m_testcontents
+m_1 m_1
+end type
+global m_inh202_l1 m_inh202_l1
+
+type variables
+
+end variables
+
+on m_inh202_l1.create
+m_inh202_l1=this
+call super::create
+this.text = "m_inh202_l1"
+this.m_testcontents=create m_testcontents
+this.m_1=create m_1
+this.Item[UpperBound(this.Item)+1]=this.m_testcontents
+this.Item[UpperBound(this.Item)+1]=this.m_1
+end on
+
+on m_inh202_l1.destroy
+call super::destroy
+destroy(this.m_testcontents)
+destroy(this.m_1)
+end on
+
+type m_testcontents from menu within m_inh202_l1
+m_menupropertyofleve2 m_menupropertyofleve2
+m_menupropertyofleve3 m_menupropertyofleve3
+m_text m_text
+m_tag m_tag
+m_visible m_visible
+m_enable m_enable
+m_checked m_checked
+m_toolbaritemname m_toolbaritemname
+m_toolbaritemdownname m_toolbaritemdownname
+m_toolbaritemtext m_toolbaritemtext
+end type
+
+on m_testcontents.create
+call super::create
+this.text = "Test Contents"
+this.m_menupropertyofleve2=create m_menupropertyofleve2
+this.m_menupropertyofleve3=create m_menupropertyofleve3
+this.m_text=create m_text
+this.m_tag=create m_tag
+this.m_visible=create m_visible
+this.m_enable=create m_enable
+this.m_checked=create m_checked
+this.m_toolbaritemname=create m_toolbaritemname
+this.m_toolbaritemdownname=create m_toolbaritemdownname
+this.m_toolbaritemtext=create m_toolbaritemtext
+this.Item[UpperBound(this.Item)+1]=this.m_menupropertyofleve2
+this.Item[UpperBound(this.Item)+1]=this.m_menupropertyofleve3
+this.Item[UpperBound(this.Item)+1]=this.m_text
+this.Item[UpperBound(this.Item)+1]=this.m_tag
+this.Item[UpperBound(this.Item)+1]=this.m_visible
+this.Item[UpperBound(this.Item)+1]=this.m_enable
+this.Item[UpperBound(this.Item)+1]=this.m_checked
+this.Item[UpperBound(this.Item)+1]=this.m_toolbaritemname
+this.Item[UpperBound(this.Item)+1]=this.m_toolbaritemdownname
+this.Item[UpperBound(this.Item)+1]=this.m_toolbaritemtext
+end on
+
+on m_testcontents.destroy
+call super::destroy
+destroy(this.m_menupropertyofleve2)
+destroy(this.m_menupropertyofleve3)
+destroy(this.m_text)
+destroy(this.m_tag)
+destroy(this.m_visible)
+destroy(this.m_enable)
+destroy(this.m_checked)
+destroy(this.m_toolbaritemname)
+destroy(this.m_toolbaritemdownname)
+destroy(this.m_toolbaritemtext)
+end on
+
+type m_menupropertyofleve2 from menu within m_testcontents
+event create ( )
+event destroy ( )
+end type
+
+on m_menupropertyofleve2.create
+call super::create
+this.text = "Menu Property of Leve 2"
+end on
+
+on m_menupropertyofleve2.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_inh202w01_menupropertyl2, ParentWindow, 0, Original!)
+end event
+
+type m_menupropertyofleve3 from menu within m_testcontents
+event create ( )
+event destroy ( )
+end type
+
+on m_menupropertyofleve3.create
+call super::create
+this.text = "Menu Property of Leve 3"
+end on
+
+on m_menupropertyofleve3.destroy
+call super::destroy
+end on
+
+event clicked;OpenSheet(w_inh202w02_menupropertyl3, ParentWindow, 0, Original!)
+end event
+
+type m_text from menu within m_testcontents
+event create ( )
+event destroy ( )
+end type
+
+on m_text.create
+call super::create
+end on
+
+on m_text.destroy
+call super::destroy
+end on
+
+type m_tag from menu within m_testcontents
+event create ( )
+event destroy ( )
+end type
+
+on m_tag.create
+call super::create
+this.text = "Test Point 2(Tag)"
+end on
+
+on m_tag.destroy
+call super::destroy
+end on
+
+type m_visible from menu within m_testcontents
+event create ( )
+event destroy ( )
+end type
+
+on m_visible.create
+call super::create
+this.visible = false
+this.text = "Test Point 3(Visible)"
+end on
+
+on m_visible.destroy
+call super::destroy
+end on
+
+type m_enable from menu within m_testcontents
+event create ( )
+event destroy ( )
+end type
+
+on m_enable.create
+call super::create
+this.text = "Test Point 4(Enable)"
+this.enabled = false
+end on
+
+on m_enable.destroy
+call super::destroy
+end on
+
+type m_checked from menu within m_testcontents
+event create ( )
+event destroy ( )
+end type
+
+on m_checked.create
+call super::create
+this.text = "Test Point 5(Checked)"
+end on
+
+on m_checked.destroy
+call super::destroy
+end on
+
+type m_toolbaritemname from menu within m_testcontents
+event create ( )
+event destroy ( )
+end type
+
+on m_toolbaritemname.create
+call super::create
+this.text = "Test Point 6(ToolbarItemName)"
+end on
+
+on m_toolbaritemname.destroy
+call super::destroy
+end on
+
+type m_toolbaritemdownname from menu within m_testcontents
+event create ( )
+event destroy ( )
+end type
+
+on m_toolbaritemdownname.create
+call super::create
+this.text = "Test Point 7(ToolbarItemDownName)"
+this.toolbaritemdownname = "ArrangeTables5!"
+end on
+
+on m_toolbaritemdownname.destroy
+call super::destroy
+end on
+
+type m_toolbaritemtext from menu within m_testcontents
+event create ( )
+event destroy ( )
+end type
+
+on m_toolbaritemtext.create
+call super::create
+this.text = "Test Point 8(ToolbarItemText)"
+this.toolbaritemtext = "L1"
+end on
+
+on m_toolbaritemtext.destroy
+call super::destroy
+end on
+
+type m_1 from menu within m_inh202_l1
+end type
+
+event clicked;Close(ParentWindow)
+end event
+
+on m_1.create
+call super::create
+this.text = "Exit"
+end on
+
+on m_1.destroy
+call super::destroy
+end on
+

@@ -1,0 +1,91 @@
+﻿$PBExportHeader$m_inh402_l1_no2.srm
+forward
+global type m_inh402_l1_no2 from menu
+end type
+type m_testcontents from menu within m_inh402_l1_no2
+end type
+type m_3 from menu within m_testcontents
+end type
+type m_testcontents from menu within m_inh402_l1_no2
+m_3 m_3
+end type
+type m_1 from menu within m_inh402_l1_no2
+end type
+global type m_inh402_l1_no2 from menu
+m_testcontents m_testcontents
+m_1 m_1
+end type
+end forward
+
+global type m_inh402_l1_no2 from menu
+m_testcontents m_testcontents
+m_1 m_1
+end type
+global m_inh402_l1_no2 m_inh402_l1_no2
+
+type variables
+String	is_L1_No2 = "L1 No2"
+end variables
+
+on m_inh402_l1_no2.create
+m_inh402_l1_no2=this
+call super::create
+this.text = "m_inh402_l1_no2"
+this.m_testcontents=create m_testcontents
+this.m_1=create m_1
+this.Item[UpperBound(this.Item)+1]=this.m_testcontents
+this.Item[UpperBound(this.Item)+1]=this.m_1
+end on
+
+on m_inh402_l1_no2.destroy
+call super::destroy
+destroy(this.m_testcontents)
+destroy(this.m_1)
+end on
+
+type m_testcontents from menu within m_inh402_l1_no2
+m_3 m_3
+end type
+
+on m_testcontents.create
+call super::create
+this.text = "Test Contents"
+this.m_3=create m_3
+this.Item[UpperBound(this.Item)+1]=this.m_3
+end on
+
+on m_testcontents.destroy
+call super::destroy
+destroy(this.m_3)
+end on
+
+type m_3 from menu within m_testcontents
+end type
+
+event clicked;//OpenSheet(W_INH401W01_NVOINMENU, parentwindow, 0, Original!)
+end event
+
+on m_3.create
+call super::create
+this.text = "NO2 L1"
+end on
+
+on m_3.destroy
+call super::destroy
+end on
+
+type m_1 from menu within m_inh402_l1_no2
+end type
+
+event clicked;Close(ParentWindow)
+end event
+
+on m_1.create
+call super::create
+this.text = "Exit"
+end on
+
+on m_1.destroy
+call super::destroy
+end on
+
